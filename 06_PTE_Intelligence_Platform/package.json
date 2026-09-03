@@ -1,0 +1,27 @@
+{
+  "name": "pte-academic-intelligence-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local Personal Assessment & Study Intelligence Platform for Australia WHV Subclass 462 PTE Academic Preparation",
+  "scripts": {
+    "dev": "next dev -p 3005",
+    "build": "next build",
+    "start": "next start -p 3005",
+    "lint": "next lint",
+    "test:db": "node scripts/test_db.js",
+    "test:probe": "python scripts/hardware_probe.py",
+    "import:drafts": "python scripts/import_local_drafts.py"
+  },
+  "dependencies": {
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "lucide-react": "^0.469.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
+    "typescript": "^5.7.2"
+  }
+}

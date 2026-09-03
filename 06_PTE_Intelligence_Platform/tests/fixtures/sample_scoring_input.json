@@ -1,0 +1,33 @@
+{
+  "fib_case": {
+    "type_code": "R_FIB",
+    "user_blanks": ["remarkable", "efficient", "alternative", "emissions"],
+    "canonical_blanks": ["remarkable", "efficient", "alternative", "emissions"],
+    "expected_score": 4,
+    "max_score": 4
+  },
+  "negative_marking_case": {
+    "type_code": "R_MCM",
+    "user_selected": ["A", "C", "D"],
+    "correct_options": ["A", "B"],
+    "notes": "1 correct (A), 2 wrong (C, D) -> 1 - 2 = -1, but floored at 0",
+    "expected_score": 0,
+    "max_score": 2
+  },
+  "reorder_case": {
+    "type_code": "RO",
+    "user_order": ["A", "B", "D", "C"],
+    "canonical_order": ["A", "B", "C", "D"],
+    "pairs": "Expected pairs: (A,B), (B,C), (C,D). User pairs: (A,B), (B,D), (D,C). Only (A,B) matches.",
+    "expected_score": 1,
+    "max_score": 3
+  },
+  "wfd_case": {
+    "type_code": "WFD",
+    "user_sentence": "The library orientation session for students will commence at ten o'clock.",
+    "canonical_sentence": "The library orientation session for postgraduate students will commence at ten o'clock.",
+    "notes": "10 words match out of 11 canonical words",
+    "expected_score": 10,
+    "max_score": 11
+  }
+}

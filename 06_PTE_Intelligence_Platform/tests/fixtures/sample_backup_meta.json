@@ -1,0 +1,6 @@
+{
+  "backup_type": "FULL",
+  "expected_db_file": "data/app_storage.sqlite3",
+  "compression_format": "gzip",
+  "test_notes": "Verifies SHA-256 checksum verification and database restore integrity."
+}

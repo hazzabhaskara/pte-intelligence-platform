@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-09-02T16:00:00Z",
+  "node": { "installed": true, "version": "v24.11.1", "status": "PASS" },
+  "python": { "installed": true, "version": "3.14.0", "executable": "python", "status": "PASS" },
+  "docker": { "installed": true, "version": "Docker version 29.2.0", "status": "OPTIONAL_PASS" },
+  "database": { "exists": true, "table_count": 30, "journal_mode": "wal", "size_bytes": 270336, "status": "PASS" },
+  "ollama": { "cli_installed": false, "api_running": false, "endpoint": "http://localhost:11434", "models": [], "status": "NOT_INSTALLED" },
+  "hardware": {
+    "ram": { "total_gb": 16.0, "free_gb": 4.5, "recommendation": "Optimal for 7B Q4 model." },
+    "gpu": { "devices": ["NVIDIA GeForce MX330"], "acceleration": "CUDA available" },
+    "disk": { "drive": "D:", "free_gb": 680.0, "total_gb": 708.0, "status": "PASS" }
+  }
+}

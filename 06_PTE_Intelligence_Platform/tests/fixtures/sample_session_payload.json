@@ -1,0 +1,12 @@
+{
+  "session_mode": "FULL_MOCK",
+  "target_type": null,
+  "target_section": "ALL",
+  "allocated_time_seconds": 8100,
+  "sample_response": {
+    "item_id": "ITEM-RA-TEST",
+    "user_answer_text": "Solar energy adoption has accelerated significantly across regional Australia over the past decade.",
+    "time_spent_seconds": 38,
+    "mic_silence_triggered": false
+  }
+}

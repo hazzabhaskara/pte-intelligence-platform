@@ -1,0 +1,15 @@
+{
+  "essay_item": {
+    "type_code": "WE",
+    "prompt_text": "Some people believe that university education should be completely free for all citizens, while others argue that students should pay their own tuition fees. Discuss both views and give your opinion.",
+    "sample_user_essay": "In modern society, the debate over whether university education should be free for all citizens or funded by students themselves has gained significant attention. On the one hand, providing free higher education ensures equal opportunities for all individuals regardless of their socioeconomic background. It allows talented students to pursue their academic ambitions without the burden of financial debt. On the other hand, higher education requires substantial financial resources to maintain quality facilities, libraries, and research laboratories. If governments fully subsidize tuition fees, it may place a heavy burden on national taxpayers. In my opinion, a balanced approach such as income-contingent loans or targeted scholarships for underprivileged students is the most sustainable solution. This ensures accessible education while maintaining university standards.",
+    "word_count": 133
+  },
+  "speaking_transcript": {
+    "type_code": "RA",
+    "prompt_text": "Solar energy adoption has accelerated significantly across regional Australia over the past decade.",
+    "transcript_text": "Solar energy adoption has accelerated significantly across regional Australia over the past decade.",
+    "duration_seconds": 4.5,
+    "expected_wpm_range": [120, 160]
+  }
+}

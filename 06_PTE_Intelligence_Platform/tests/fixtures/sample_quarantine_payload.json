@@ -1,0 +1,13 @@
+{
+  "source_url": "https://example-community-blog.com/pte-hacks-2026",
+  "title": "Top 10 PTE Template Hacks for Quick 50 Score",
+  "extracted_text": "Always use this essay template: The debate over [TOPIC] has become prominent... You are guaranteed 100% full fluency and content without learning English.",
+  "source_tier": "Tier 3",
+  "detected_flags": {
+    "is_rigid_boilerplate": true,
+    "copyright_warning": "Contains verbatim community cheat-sheet matching SRC-LOC-TMPL-008",
+    "similarity_to_existing": 0.88
+  },
+  "ai_recommendation": "REJECT",
+  "rejection_reason": "Contains disproven claim that templates are 100% safe. Poses high risk of zero content score under August 2025 Pearson scoring rules."
+}

@@ -1,0 +1,23 @@
+{
+  "study_plan": {
+    "duration_weeks": 4,
+    "focus_track": "WHV_SUBCLASS_462",
+    "target_score_official": 24,
+    "target_score_safe": 36,
+    "current_week": 1,
+    "daily_modules_count": 4
+  },
+  "sm2_sample_card": {
+    "card_id": "CARD-WFD-001",
+    "item_id": "ITEM-WFD-SAMPLE",
+    "repetition_number": 1,
+    "easiness_factor": 2.5,
+    "interval_days": 1,
+    "rating_quality": 4
+  },
+  "australia_practical_sample": {
+    "module_code": "AU_TFN_RSA",
+    "title": "Tax File Number & RSA Hospitality Communication",
+    "cefr_level": "B1"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "blueprint_id": "BP-RTS-01",
+  "type_code": "RTS",
+  "target_difficulty": "DIFF_MODERATE",
+  "prompt_structural_pattern": "Short social or professional situation scenario (40-70 words). The examinee must formulate an appropriate spontaneous spoken reply adhering to social register.",
+  "grammatical_focus": "Polite requests, apologies, and pragmatic hedging.",
+  "audio_requirements": {
+    "prep_time": 10,
+    "response_time": 40,
+    "mic_3s_rule": true
+  },
+  "sample_generated_item": {
+    "item_id": "ITEM-RTS-SAMPLE",
+    "prompt_text": "You are assisting a customer at a regional transit hub who missed their scheduled coach to Brisbane. Explain the rebooking options politely.",
+    "canonical_answer": "I apologize for the inconvenience. Our next scheduled coach departs at two o'clock, and I can transfer your ticket at no additional charge."
+  }
+}

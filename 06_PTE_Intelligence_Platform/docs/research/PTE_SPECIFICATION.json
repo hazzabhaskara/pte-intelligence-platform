@@ -1,0 +1,524 @@
+{
+  "specification_version": "2.1.0",
+  "effective_date": "2025-08-07",
+  "last_audited": "2026-09-02",
+  "official_regulatory_standard": {
+    "jurisdiction": "Commonwealth of Australia",
+    "department": "Department of Home Affairs",
+    "visa_subclass": "462 (Work and Holiday)",
+    "english_standard": "Functional English",
+    "statutory_minimum_overall_score": 24,
+    "historical_minimum_overall_score_pre_aug_2025": 30,
+    "practice_safe_target_score": 36,
+    "per_skill_minimum_mandated": false,
+    "validity_period_months": 12,
+    "delivery_mode_allowed": "In-Person Test Centre Only",
+    "remote_proctored_online_allowed": false
+  },
+  "exam_overview": {
+    "total_parts": 3,
+    "scored_question_types": 22,
+    "unscored_items": 1,
+    "estimated_total_duration_minutes": 135,
+    "score_scale": {
+      "min": 10,
+      "max": 90,
+      "scale_name": "Global Scale of English (GSE)"
+    },
+    "microphone_silence_timeout_seconds": 3,
+    "negative_marking_question_types": [
+      "reading_multiple_choice_multiple_answers",
+      "listening_multiple_choice_multiple_answers",
+      "listening_highlight_incorrect_words"
+    ]
+  },
+  "sections": [
+    {
+      "section_id": "PART_1",
+      "section_name": "Speaking & Writing",
+      "estimated_duration_minutes": 65,
+      "question_types": [
+        {
+          "type_id": "PI",
+          "name": "Personal Introduction",
+          "skills_contributed": [],
+          "is_scored": false,
+          "item_count_range": [1, 1],
+          "prep_time_seconds": 25,
+          "response_time_seconds": 30,
+          "prompt_type": "text",
+          "response_mode": "audio",
+          "template_risk": "NONE",
+          "description": "Unscored warmup item sent to visa officers or institutions."
+        },
+        {
+          "type_id": "RA",
+          "name": "Read Aloud",
+          "skills_contributed": ["Speaking", "Reading"],
+          "is_scored": true,
+          "item_count_range": [6, 7],
+          "prep_time_seconds": 35,
+          "response_time_seconds": 40,
+          "prompt_type": "text",
+          "prompt_length_words": [40, 60],
+          "response_mode": "audio",
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "content": { "max": 5, "type": "word_match_accuracy" },
+            "oral_fluency": { "max": 5, "type": "rhythm_hesitation_speed" },
+            "pronunciation": { "max": 5, "type": "phonetic_intelligibility" }
+          },
+          "community_tier": "TIER_1_CRITICAL",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "RS",
+          "name": "Repeat Sentence",
+          "skills_contributed": ["Speaking", "Listening"],
+          "is_scored": true,
+          "item_count_range": [10, 12],
+          "prep_time_seconds": 0,
+          "response_time_seconds": 15,
+          "prompt_type": "audio",
+          "prompt_duration_seconds": [3, 9],
+          "prompt_length_words": [7, 16],
+          "response_mode": "audio",
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "content": { "max": 3, "description": "3: 100%, 2: >=50%, 1: <50%, 0: none" },
+            "oral_fluency": { "max": 5, "type": "rhythm_hesitation_speed" },
+            "pronunciation": { "max": 5, "type": "phonetic_intelligibility" }
+          },
+          "community_tier": "TIER_1_CRITICAL",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "DI",
+          "name": "Describe Image",
+          "skills_contributed": ["Speaking"],
+          "is_scored": true,
+          "item_count_range": [3, 4],
+          "prep_time_seconds": 25,
+          "response_time_seconds": 40,
+          "prompt_type": "image",
+          "image_categories": ["bar_chart", "line_graph", "pie_chart", "table", "map", "flowchart", "photo"],
+          "response_mode": "audio",
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "content": { "max": 5, "type": "key_features_relationships" },
+            "oral_fluency": { "max": 5, "type": "rhythm_hesitation_speed" },
+            "pronunciation": { "max": 5, "type": "phonetic_intelligibility" }
+          },
+          "community_tier": "TIER_2_STRATEGY",
+          "template_risk": "HIGH",
+          "template_policy_warning": "Rigid memorized scripts that lack image-specific content are subject to 0 content score under human review gate.",
+          "post_aug_2025_status": "ENHANCED_AUDIT"
+        },
+        {
+          "type_id": "RL",
+          "name": "Re-tell Lecture",
+          "skills_contributed": ["Speaking", "Listening"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "prep_time_seconds": 10,
+          "response_time_seconds": 40,
+          "prompt_type": "audio_with_optional_image",
+          "prompt_duration_seconds": [60, 90],
+          "response_mode": "audio",
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "content": { "max": 5, "type": "main_points_elaboration" },
+            "oral_fluency": { "max": 5, "type": "rhythm_hesitation_speed" },
+            "pronunciation": { "max": 5, "type": "phonetic_intelligibility" }
+          },
+          "community_tier": "TIER_2_STRATEGY",
+          "template_risk": "HIGH",
+          "post_aug_2025_status": "ENHANCED_AUDIT"
+        },
+        {
+          "type_id": "ASQ",
+          "name": "Answer Short Question",
+          "skills_contributed": ["Speaking", "Listening"],
+          "is_scored": true,
+          "item_count_range": [5, 6],
+          "prep_time_seconds": 0,
+          "response_time_seconds": 10,
+          "prompt_type": "audio",
+          "prompt_duration_seconds": [2, 5],
+          "response_mode": "audio",
+          "scoring_type": "binary",
+          "scoring_metrics": {
+            "vocabulary": { "max": 1, "description": "1 point for correct word, 0 otherwise" }
+          },
+          "community_tier": "TIER_3_LOW_IMPACT",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "RTS",
+          "name": "Respond to a Situation",
+          "skills_contributed": ["Speaking"],
+          "is_scored": true,
+          "item_count_range": [2, 4],
+          "prep_time_seconds": 10,
+          "response_time_seconds": 40,
+          "prompt_type": "text_situation_scenario",
+          "prompt_length_words": [40, 70],
+          "response_mode": "audio",
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "content": { "max": 5, "type": "appropriacy_clarity_solution" },
+            "oral_fluency": { "max": 5, "type": "rhythm_hesitation_speed" },
+            "pronunciation": { "max": 5, "type": "phonetic_intelligibility" }
+          },
+          "community_tier": "TIER_2_STRATEGY",
+          "template_risk": "CRITICAL",
+          "template_policy_warning": "Must directly address the specific communicative context with appropriate register and politeness. Generic filler will fail.",
+          "post_aug_2025_status": "NEWLY_ADDED"
+        },
+        {
+          "type_id": "SGD",
+          "name": "Summarize Group Discussion",
+          "skills_contributed": ["Speaking", "Listening"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "prep_time_seconds": 10,
+          "response_time_seconds": 120,
+          "prompt_type": "multi_speaker_audio",
+          "prompt_duration_seconds": [90, 150],
+          "speakers_count": 3,
+          "response_mode": "audio",
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "content": { "max": 5, "type": "synthesis_differing_viewpoints_resolution" },
+            "oral_fluency": { "max": 5, "type": "rhythm_hesitation_speed" },
+            "pronunciation": { "max": 5, "type": "phonetic_intelligibility" }
+          },
+          "community_tier": "TIER_2_STRATEGY",
+          "template_risk": "HIGH",
+          "post_aug_2025_status": "NEWLY_ADDED"
+        },
+        {
+          "type_id": "SWT",
+          "name": "Summarize Written Text",
+          "skills_contributed": ["Reading", "Writing"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "prep_time_seconds": 0,
+          "response_time_seconds": 600,
+          "prompt_type": "text_article",
+          "prompt_length_words": [150, 350],
+          "response_mode": "written_text",
+          "constraints": {
+            "sentence_count": 1,
+            "min_words": 5,
+            "max_words": 75,
+            "recommended_words": [30, 45]
+          },
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "content": { "max": 2 },
+            "form": { "max": 1, "description": "1 point if exactly 1 full sentence between 5 and 75 words" },
+            "grammar": { "max": 2 },
+            "vocabulary": { "max": 2 }
+          },
+          "community_tier": "TIER_2_STRATEGY",
+          "template_risk": "LOW",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "WE",
+          "name": "Write Essay",
+          "skills_contributed": ["Writing"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "prep_time_seconds": 0,
+          "response_time_seconds": 1200,
+          "prompt_type": "text_essay_prompt",
+          "prompt_length_words": [20, 40],
+          "response_mode": "written_text",
+          "constraints": {
+            "min_words": 200,
+            "max_words": 300,
+            "recommended_words": [215, 240]
+          },
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "content": { "max": 3 },
+            "form": { "max": 2, "description": "2 pts if 200-300 words; 1 pt if 120-199 or 301-380 words; 0 pts otherwise" },
+            "development_structure_coherence": { "max": 2 },
+            "grammar": { "max": 2 },
+            "general_linguistic_range": { "max": 2 },
+            "vocabulary_range": { "max": 2 },
+            "spelling": { "max": 2 }
+          },
+          "community_tier": "TIER_2_STRATEGY",
+          "template_risk": "HIGH",
+          "template_policy_warning": "Boilerplate essays with only 2 prompt keywords risk form and content penalties under hybrid AI/human review.",
+          "post_aug_2025_status": "ENHANCED_AUDIT"
+        }
+      ]
+    },
+    {
+      "section_id": "PART_2",
+      "section_name": "Reading",
+      "estimated_duration_minutes": 30,
+      "timer_scope": "section_shared_timer",
+      "question_types": [
+        {
+          "type_id": "RW_FIB",
+          "name": "Reading & Writing: Fill in the Blanks",
+          "skills_contributed": ["Reading", "Writing"],
+          "is_scored": true,
+          "item_count_range": [5, 6],
+          "prompt_type": "text_with_dropdowns",
+          "blanks_per_item": [4, 5],
+          "options_per_blank": 4,
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "per_blank": 1
+          },
+          "community_tier": "TIER_1_CRITICAL",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "MCMA_R",
+          "name": "Multiple Choice, Choose Multiple Answers (Reading)",
+          "skills_contributed": ["Reading"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "prompt_type": "text_passage",
+          "scoring_type": "negative_marking",
+          "negative_marking_rules": {
+            "correct_selection": 1,
+            "incorrect_selection": -1,
+            "minimum_item_floor": 0
+          },
+          "community_tier": "TIER_3_LOW_IMPACT",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "RO",
+          "name": "Re-order Paragraphs",
+          "skills_contributed": ["Reading"],
+          "is_scored": true,
+          "item_count_range": [2, 3],
+          "prompt_type": "scrambled_paragraphs",
+          "paragraph_count": [4, 5],
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "per_correct_adjacent_pair": 1
+          },
+          "community_tier": "TIER_3_LOW_IMPACT",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "R_FIB",
+          "name": "Reading: Fill in the Blanks",
+          "skills_contributed": ["Reading"],
+          "is_scored": true,
+          "item_count_range": [4, 5],
+          "prompt_type": "text_with_drag_drop_bank",
+          "blanks_per_item": [3, 5],
+          "distractor_words_in_bank": [6, 8],
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "per_blank": 1
+          },
+          "community_tier": "TIER_2_STRATEGY",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "MCSA_R",
+          "name": "Multiple Choice, Choose Single Answer (Reading)",
+          "skills_contributed": ["Reading"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "prompt_type": "text_passage",
+          "scoring_type": "binary",
+          "scoring_metrics": {
+            "correct_selection": 1,
+            "incorrect_selection": 0
+          },
+          "community_tier": "TIER_3_LOW_IMPACT",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        }
+      ]
+    },
+    {
+      "section_id": "PART_3",
+      "section_name": "Listening",
+      "estimated_duration_minutes": 40,
+      "question_types": [
+        {
+          "type_id": "SST",
+          "name": "Summarize Spoken Text",
+          "skills_contributed": ["Listening", "Writing"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "prep_time_seconds": 0,
+          "response_time_seconds": 600,
+          "timer_scope": "independent_item_timer",
+          "prompt_type": "audio_lecture",
+          "prompt_duration_seconds": [60, 90],
+          "response_mode": "written_text",
+          "constraints": {
+            "min_words": 50,
+            "max_words": 70,
+            "recommended_words": [55, 68]
+          },
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "content": { "max": 2 },
+            "form": { "max": 2, "description": "2 pts if 50-70 words; 1 pt if 40-49 or 71-100 words; 0 pts if <40 or >100 words" },
+            "grammar": { "max": 2 },
+            "vocabulary": { "max": 2 },
+            "spelling": { "max": 2 }
+          },
+          "community_tier": "TIER_1_CRITICAL",
+          "template_risk": "MODERATE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "MCMA_L",
+          "name": "Multiple Choice, Choose Multiple Answers (Listening)",
+          "skills_contributed": ["Listening"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "timer_scope": "section_shared_timer",
+          "prompt_type": "audio",
+          "prompt_duration_seconds": [40, 90],
+          "scoring_type": "negative_marking",
+          "negative_marking_rules": {
+            "correct_selection": 1,
+            "incorrect_selection": -1,
+            "minimum_item_floor": 0
+          },
+          "community_tier": "TIER_3_LOW_IMPACT",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "L_FIB",
+          "name": "Fill in the Blanks (Listening)",
+          "skills_contributed": ["Listening", "Writing"],
+          "is_scored": true,
+          "item_count_range": [2, 3],
+          "timer_scope": "section_shared_timer",
+          "prompt_type": "audio_with_transcript_gaps",
+          "prompt_duration_seconds": [30, 60],
+          "blanks_per_item": [4, 6],
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "per_correct_word_spelled_accurately": 1
+          },
+          "community_tier": "TIER_2_STRATEGY",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "HCS",
+          "name": "Highlight Correct Summary",
+          "skills_contributed": ["Listening", "Reading"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "timer_scope": "section_shared_timer",
+          "prompt_type": "audio",
+          "prompt_duration_seconds": [30, 90],
+          "scoring_type": "binary",
+          "scoring_metrics": {
+            "correct_selection": 1,
+            "incorrect_selection": 0
+          },
+          "community_tier": "TIER_3_LOW_IMPACT",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "MCSA_L",
+          "name": "Multiple Choice, Choose Single Answer (Listening)",
+          "skills_contributed": ["Listening"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "timer_scope": "section_shared_timer",
+          "prompt_type": "audio",
+          "prompt_duration_seconds": [30, 60],
+          "scoring_type": "binary",
+          "scoring_metrics": {
+            "correct_selection": 1,
+            "incorrect_selection": 0
+          },
+          "community_tier": "TIER_3_LOW_IMPACT",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "SMW",
+          "name": "Select Missing Word",
+          "skills_contributed": ["Listening"],
+          "is_scored": true,
+          "item_count_range": [1, 2],
+          "timer_scope": "section_shared_timer",
+          "prompt_type": "audio_with_beep_ending",
+          "prompt_duration_seconds": [20, 50],
+          "scoring_type": "binary",
+          "scoring_metrics": {
+            "correct_selection": 1,
+            "incorrect_selection": 0
+          },
+          "community_tier": "TIER_3_LOW_IMPACT",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "HIW",
+          "name": "Highlight Incorrect Words",
+          "skills_contributed": ["Listening", "Reading"],
+          "is_scored": true,
+          "item_count_range": [2, 3],
+          "timer_scope": "section_shared_timer",
+          "prompt_type": "audio_and_imperfect_transcript",
+          "prompt_duration_seconds": [15, 50],
+          "incorrect_words_count": [4, 7],
+          "scoring_type": "negative_marking",
+          "negative_marking_rules": {
+            "correct_highlight": 1,
+            "incorrect_highlight": -1,
+            "minimum_item_floor": 0
+          },
+          "community_tier": "TIER_2_STRATEGY",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        },
+        {
+          "type_id": "WFD",
+          "name": "Write From Dictation",
+          "skills_contributed": ["Listening", "Writing"],
+          "is_scored": true,
+          "item_count_range": [3, 4],
+          "timer_scope": "section_shared_timer",
+          "prompt_type": "audio_sentence",
+          "prompt_duration_seconds": [3, 6],
+          "prompt_length_words": [8, 15],
+          "response_mode": "written_text",
+          "scoring_type": "partial_credit",
+          "scoring_metrics": {
+            "per_correct_word_spelled_accurately": 1,
+            "extra_word_penalty": 0,
+            "order_dependent": false
+          },
+          "community_tier": "TIER_1_CRITICAL",
+          "template_risk": "NONE",
+          "post_aug_2025_status": "UNCHANGED"
+        }
+      ]
+    }
+  ]
+}
