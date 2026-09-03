@@ -24,11 +24,16 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-echo [2/3] Membuka browser ke http://localhost:3005/dashboard...
-start "" "http://localhost:3005/dashboard"
+echo [2/3] Menyiapkan pembukaan browser...
+start /b "" powershell -WindowStyle Hidden -Command "Start-Sleep -Seconds 2; Start-Process 'http://localhost:3005/dashboard'"
 
 echo [3/3] Meluncurkan server lokal Next.js di Port 3005...
-echo Tekan CTRL+C di jendela ini untuk menghentikan server.
+echo ======================================================================
+echo CATATAN PENTING:
+echo JANGAN TUTUP jendela terminal/CMD ini selama memakai aplikasi!
+echo Jika jendela ini ditutup, halaman browser akan menampilkan ERR_CONNECTION_REFUSED.
+echo Cukup minimize jendela ini jika ingin merapikan layar.
+echo ======================================================================
 echo.
 npm run start -p 3005
 

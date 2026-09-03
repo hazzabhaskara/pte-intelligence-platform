@@ -1,8 +1,8 @@
 :root {
   --bg-primary: #07090e;
   --bg-secondary: #0d121f;
-  --bg-card: rgba(16, 24, 40, 0.72);
-  --bg-card-hover: rgba(22, 34, 58, 0.85);
+  --bg-card: rgba(15, 23, 42, 0.96);
+  --bg-card-hover: rgba(30, 41, 59, 0.96);
   --bg-glass: rgba(30, 41, 59, 0.45);
   --border-color: rgba(255, 255, 255, 0.09);
   --border-glow: rgba(59, 130, 246, 0.35);
@@ -288,6 +288,13 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.grid-cols-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .grid-cols-2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
@@ -300,7 +307,6 @@ body {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 1.5rem;
-  backdrop-filter: blur(12px);
   transition: var(--transition-normal);
 }
 
@@ -528,4 +534,16 @@ textarea:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+
+/* Below-the-fold container performance rules */
+.dashboard-backup-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 390px;
+}
+
+.dashboard-hub-section {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 330px;
+}
+
 

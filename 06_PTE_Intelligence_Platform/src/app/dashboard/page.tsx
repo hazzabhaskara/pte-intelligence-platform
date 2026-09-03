@@ -2,6 +2,16 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+import { SkillRadarChartSkeleton } from '@/components/dashboard/SkillRadarChartSkeleton';
+
+const SkillRadarChart = dynamic(
+  () => import('@/components/dashboard/SkillRadarChart'),
+  {
+    ssr: false,
+    loading: () => <SkillRadarChartSkeleton />
+  }
+);
 
 export default function DashboardPage() {
   const [data, setData] = useState<any>(null);
@@ -111,54 +121,74 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* 4 Skills Breakdown */}
-      <div className="grid-cols-4" style={{ marginBottom: '2.5rem' }}>
-        {/* Speaking */}
-        <div className="card">
-          <div className="card-header">
-            <span className="card-title">🎙️ Speaking</span>
-            <span className="badge badge-blue">SKILL 1</span>
-          </div>
-          <div className="card-number" style={{ color: 'var(--accent-blue)' }}>
-            {perf.speaking_score || 42.0}
-          </div>
-          <p className="card-desc">Read Aloud, RTS, Repeat Sentence, Oral Fluency.</p>
-        </div>
+      {/* 4 Skills Executive Landscape: Radar + Detailed Cards */}
+      <div style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(360px, 1fr))',
+        gap: '1.5rem',
+        marginBottom: '2.5rem',
+        alignItems: 'stretch'
+      }}>
+        {/* Left: Dynamic Lightweight SVG Radar Chart */}
+        <SkillRadarChart
+          speaking={perf.speaking_score || 42.0}
+          writing={perf.writing_score || 36.0}
+          reading={perf.reading_score || 35.0}
+          listening={perf.listening_score || 39.0}
+          safeTarget={36}
+          legalMinimum={24}
+          overallScore={perf.overall_score || 38.0}
+        />
 
-        {/* Writing */}
-        <div className="card">
-          <div className="card-header">
-            <span className="card-title">✍️ Writing</span>
-            <span className="badge badge-purple">SKILL 2</span>
+        {/* Right: 2x2 Grid of Detailed Core Skill Cards */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '1.5rem' }}>
+          {/* Speaking */}
+          <div className="card">
+            <div className="card-header">
+              <span className="card-title">🎙️ Speaking</span>
+              <span className="badge badge-blue">SKILL 1</span>
+            </div>
+            <div className="card-number" style={{ color: 'var(--accent-blue)' }}>
+              {perf.speaking_score || 42.0}
+            </div>
+            <p className="card-desc">Read Aloud, RTS, Repeat Sentence, Oral Fluency.</p>
           </div>
-          <div className="card-number" style={{ color: 'var(--accent-purple)' }}>
-            {perf.writing_score || 36.0}
-          </div>
-          <p className="card-desc">Summarize Written Text & Write Essay.</p>
-        </div>
 
-        {/* Reading */}
-        <div className="card">
-          <div className="card-header">
-            <span className="card-title">📖 Reading</span>
-            <span className="badge badge-cyan">SKILL 3</span>
+          {/* Writing */}
+          <div className="card">
+            <div className="card-header">
+              <span className="card-title">✍️ Writing</span>
+              <span className="badge badge-purple">SKILL 2</span>
+            </div>
+            <div className="card-number" style={{ color: 'var(--accent-purple)' }}>
+              {perf.writing_score || 36.0}
+            </div>
+            <p className="card-desc">Summarize Written Text & Write Essay.</p>
           </div>
-          <div className="card-number" style={{ color: 'var(--accent-cyan)' }}>
-            {perf.reading_score || 35.0}
-          </div>
-          <p className="card-desc">Reading FIB, Re-order, Multiple Choice.</p>
-        </div>
 
-        {/* Listening */}
-        <div className="card">
-          <div className="card-header">
-            <span className="card-title">🎧 Listening</span>
-            <span className="badge badge-emerald">SKILL 4</span>
+          {/* Reading */}
+          <div className="card">
+            <div className="card-header">
+              <span className="card-title">📖 Reading</span>
+              <span className="badge badge-cyan">SKILL 3</span>
+            </div>
+            <div className="card-number" style={{ color: 'var(--accent-cyan)' }}>
+              {perf.reading_score || 35.0}
+            </div>
+            <p className="card-desc">Reading FIB, Re-order, Multiple Choice.</p>
           </div>
-          <div className="card-number" style={{ color: 'var(--accent-emerald)' }}>
-            {perf.listening_score || 39.0}
+
+          {/* Listening */}
+          <div className="card">
+            <div className="card-header">
+              <span className="card-title">🎧 Listening</span>
+              <span className="badge badge-emerald">SKILL 4</span>
+            </div>
+            <div className="card-number" style={{ color: 'var(--accent-emerald)' }}>
+              {perf.listening_score || 39.0}
+            </div>
+            <p className="card-desc">Write From Dictation, Listening FIB, SST.</p>
           </div>
-          <p className="card-desc">Write From Dictation, Listening FIB, SST.</p>
         </div>
       </div>
 
@@ -198,7 +228,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Backup & Data Protection Console */}
-      <div className="card" style={{ marginBottom: '2.5rem' }}>
+      <div className="card dashboard-backup-section" style={{ marginBottom: '2.5rem' }}>
         <div className="card-header">
           <div>
             <h3 className="card-title" style={{ fontSize: '1.25rem', color: '#fff' }}>
@@ -272,7 +302,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Quick Access Module Hub */}
-      <div className="card">
+      <div className="card dashboard-hub-section">
         <h3 className="card-title" style={{ marginBottom: '1rem' }}>Pusat Akses Cepat Modul Platform (Fase 1 – 8)</h3>
         <div className="grid-cols-3" style={{ gap: '1rem' }}>
           <Link href="/practice" className="card" style={{ padding: '1rem', border: '1px solid var(--border-color)' }}>
